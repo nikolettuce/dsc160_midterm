@@ -26,6 +26,8 @@ A Zdzislaw Beksinski's [untitled-14 painting](https://www.wikiart.org/en/zdislav
 - Code for Analysis was performed in "Style Transfer Analysis.ipynb"
 
 ## Results
+- After 100 iterations, the style transfer has worked observably well, as the realistic image has been shifted to something definitely resembling Beksinski's works.
+![model_array](https://github.com/nikolettuce/dsc160_midterm/blob/master/markdown_images/model_array.png)
 ![input_style_output](https://github.com/nikolettuce/dsc160_midterm/blob/master/markdown_images/content_style_output.jpg)
 
 
