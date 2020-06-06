@@ -22,14 +22,27 @@ A Zdzislaw Beksinski's [untitled-14 painting](https://www.wikiart.org/en/zdislav
 
 
 ## Code
-- Style Transfer was performed in "Style Transfer Model (VGG19).ipynb"
+- Style Transfer was performed in ["Style Transfer Model (VGG19).ipynb"](https://github.com/nikolettuce/dsc160_midterm/blob/master/Style%20Transfer%20Model%20(VGG19).ipynb)
 - Code for Analysis was performed in "Style Transfer Analysis.ipynb"
+  - Pleasure, Arousal, and Dominance measures.
+  - HSV measures
 
 ## Results
-- After 100 iterations, the style transfer has worked observably well, as the realistic image has been shifted to something definitely resembling Beksinski's works.
+### Style Transfer Results
+- After 1000 iterations, the style transfer has worked observably well, as the realistic image has been shifted to something definitely resembling Beksinski's works.
 ![model_array](https://github.com/nikolettuce/dsc160_midterm/blob/master/markdown_images/model_array.png)
 ![input_style_output](https://github.com/nikolettuce/dsc160_midterm/blob/master/markdown_images/content_style_output.jpg)
-
+- Here, the output image can be seen incorporating the sort of web-like architecture that Beksinski had created in his painting, albeit on a much less detailed level. The output image has also created space where it used to be negative - particularly above the bridge structure.
+### Analysis
+- Original, HSV Values plotted:
+![hsv_plotted](https://github.com/nikolettuce/dsc160_midterm/blob/master/markdown_images/chrome_pEfi9vni9c.jpg)
+  - Here, we can observe the influence that the style image had:
+   - In the Hue channel, the predominantly blue content image was changed to a mixture between the orange from the style image, and slight amounts of blue from the original content image.
+   - In the Saturation channel, we can see that the output image's variation in color intensity was lowered from the content image and brought to have a closer spread, indicated by the lack of large dark blue/black spots that were in the content and style images.
+   - Value Channel seems to have just been brought closer to the style image, since the content image was bright initially.
+ 
+ - Pleasure, Arousal, and Dominance plotted:
+ ![pad](https://github.com/nikolettuce/dsc160_midterm/blob/master/markdown_images/pad.png)
 
 
 ## Discussion
